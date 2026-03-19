@@ -1110,7 +1110,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("""
     <div style="color:#8b949e; font-size:0.75rem; line-height:1.6">
-    <b style="color:#c9d1d9">Pipeline IA :</b><br>
+    <b style="color:#24292f">Pipeline IA :</b><br>
     1️⃣ Extraction PDF<br>
     2️⃣ Nettoyage textes<br>
     3️⃣ Embeddings CamemBERT<br>
@@ -1184,7 +1184,7 @@ if res is None:
     st.markdown("""
     <div style="text-align:center; padding:4rem 2rem; color:#8b949e;">
         <div style="font-size:4rem; margin-bottom:1rem">🏗️</div>
-        <div style="font-family:'Syne',sans-serif; font-size:1.4rem; color:#e6edf3; margin-bottom:0.5rem">
+        <div style="font-family:'Syne',sans-serif; font-size:1.4rem; color:#24292f; margin-bottom:0.5rem">
             Prêt à analyser votre portefeuille
         </div>
         <div style="font-size:0.9rem">
@@ -1254,7 +1254,7 @@ with tab_synthese:
                 x=[f"Groupe {int(c)}"], y=[cnt],
                 marker_color=PALETTE[int(c) % len(PALETTE)],
                 name=nom, text=[cnt], textposition="outside",
-                textfont=dict(color="#c9d1d9", size=13, family="Syne"),
+                textfont=dict(color="#24292f", size=13, family="Syne"),
                 hovertemplate=f"<b>Groupe {int(c)} — {nom}</b><br>{cnt} projet(s)<extra></extra>"
             ))
         fig_cl.update_layout(
@@ -1344,9 +1344,9 @@ with tab_clusters:
             for _, r in grp.iterrows():
                 st.markdown(
                     f"<div style='display:flex;gap:1rem;align-items:center;padding:0.5rem 0;"
-                    f"border-bottom:1px solid #21262d'>"
+                    f"border-bottom:1px solid #d0d7de'>"
                     f"<span style='font-family:monospace;font-size:0.82rem;color:{coul};min-width:130px'>{r['ID_PROJET']}</span>"
-                    f"<span style='color:#c9d1d9;font-size:0.9rem'>{r['INTITULE_PROJET']}</span>"
+                    f"<span style='color:#24292f;font-size:0.9rem'>{r['INTITULE_PROJET']}</span>"
                     f"<span style='margin-left:auto;font-size:0.8rem;color:#8b949e'>{r['CONFIANCE']:.0%}</span>"
                     f"</div>",
                     unsafe_allow_html=True
