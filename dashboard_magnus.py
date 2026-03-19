@@ -1,5 +1,5 @@
 # ==============================================================================
-#  DASHBOARD MAGNUS ENTREPRISE — Banque de Projets
+#  DASHBOARD MINEPAT ENTREPRISE — Banque de Projets
 #  Streamlit · CamemBERT · IDEC · Analyse de portefeuille
 # ==============================================================================
 
@@ -52,7 +52,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 }
 
 /* ── Titre principal ── */
-.magnus-title {
+.MINEPAT-title {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
     font-size: 2.4rem;
@@ -64,7 +64,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     letter-spacing: -0.5px;
 }
 
-.magnus-subtitle {
+.MINEPAT-subtitle {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 0.95rem;
@@ -1073,7 +1073,7 @@ with st.sidebar:
         <div style="font-family:'Syne',sans-serif; font-weight:800; font-size:1.2rem;
                     background:linear-gradient(135deg,#58a6ff,#bc8cff);
                     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-                    background-clip:text;">MAGNUS</div>
+                    background-clip:text;">MINEPAT</div>
         <div style="color:#8b949e; font-size:0.78rem; margin-top:0.2rem">Banque de Projets · Analyse IA</div>
     </div>
     """, unsafe_allow_html=True)
@@ -1125,8 +1125,8 @@ with st.sidebar:
 #  HEADER
 # ──────────────────────────────────────────────────────────────────────────────
 st.markdown("""
-<div class="magnus-title">MINEPAT PROJECT</div>
-<div class="magnus-subtitle">
+<div class="MINEPAT-title">MINEPAT PROJECT</div>
+<div class="MINEPAT-subtitle">
     Analyse intelligente du portefeuille · Clustering sémantique · Indicateurs financiers et opérationnels
 </div>
 """, unsafe_allow_html=True)
@@ -1633,11 +1633,11 @@ with tab_donnees:
     with col_dl1:
         csv_p = df_projets.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig")
         st.download_button("⬇️ Télécharger les projets (CSV)", csv_p,
-                           "projets_magnus.csv", "text/csv", use_container_width=True)
+                           "projets_MINEPAT.csv", "text/csv", use_container_width=True)
     with col_dl2:
         csv_o = df_operations.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig")
         st.download_button("⬇️ Télécharger les opérations (CSV)", csv_o,
-                           "operations_magnus.csv", "text/csv", use_container_width=True)
+                           "operations_MINEPAT.csv", "text/csv", use_container_width=True)
 
 # ──────────────────────────────────────────────────────────────────────────────
 #  FOOTER
