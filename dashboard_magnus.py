@@ -27,7 +27,7 @@ warnings.filterwarnings("ignore")
 #  CONFIG STREAMLIT
 # ──────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Magnus · Banque de Projets",
+    page_title="MINEPAT · Banque de Projets",
     page_icon="🏗️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -1125,7 +1125,7 @@ with st.sidebar:
 #  HEADER
 # ──────────────────────────────────────────────────────────────────────────────
 st.markdown("""
-<div class="magnus-title">Banque de Projets — Magnus Entreprise</div>
+<div class="magnus-title">MINEPAT PROJECT</div>
 <div class="magnus-subtitle">
     Analyse intelligente du portefeuille · Clustering sémantique · Indicateurs financiers et opérationnels
 </div>
@@ -1645,6 +1645,6 @@ with tab_donnees:
 st.markdown("---")
 st.markdown("""
 <div style="text-align:center; color:#8b949e; font-size:0.78rem; padding:0.5rem 0 1rem">
-    Magnus Entreprise · Banque de Projets · Pipeline IA : CamemBERT + IDEC + Méthode du Coude
+    MINEPAT · Banque de Projets · Pipeline IA : CamemBERT + IDEC + Méthode du Coude
 </div>
 """, unsafe_allow_html=True)
